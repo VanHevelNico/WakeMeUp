@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm aanpassen</title>
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/screen.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+    <script defer src="script/dataHandler.js"></script>
+    <script defer src="script/smartlamp.js"></script>    
+</head>
+<body>
+    <div class="c-nav--header o-row">
+      <div class="o-container">
+        <ul class="c-nav">
+          <li class="c-nav--logo"><a href="/">WMU</a></li>
+          <li class="c-nav--item" id="btnPower"><a><img src="/img/power.svg" alt="" srcset=""></a></li>
+          <li class="c-nav--item"><a><img src="" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="o-row">
+        <div class="o-container">
+          <div class=" o-layout o-layout--gutter o-layout--align-center">
+            <div class="o-layout__item u-2-of-3">
+              <h1>Smart light</h1>           
+            </div>
+          </div>
+          <div class="js-smart-light">
+            <div class=" c-smart-lamp--bg">
+              <div class="js-smart-light-bg c-smart-lamp">
+                <img src="/img/smartLamp.svg">
+              </div>
+              <div class="js-status-lamp c-accent-color">
+                
+              </div>
+            </div>
+          </div>
+          <div class="o-section o-layout o-layout--align-center">
+            <div class="o-layout__item u-2-of-3">
+              <h1>Kleurmodus</h1> 
+            </div>       
+            <div class="c-kleur">
+              <select  name="kleur" id="js-kleur-modus" class="js-kleur c-kleur-select">            
+              </select>
+            </div>  
+          </div>
+        </div>
+    </div>
+</body>
+</html>

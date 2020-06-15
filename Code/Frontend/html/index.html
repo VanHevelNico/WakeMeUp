@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Project Nico Van Hevel</title>
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/screen.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+    <script defer src="script/dataHandler.js"></script>
+    <script defer src="script/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+  </head>
+  <body>
+    <div class="c-nav--header o-row">
+      <div class="o-container">
+        <ul class="c-nav">
+          <li class="c-nav--logo"><a href="/">WMU</a></li>
+          <li class="c-nav--item" id="btnPower"><a><img src="/img/power.svg" alt="" srcset=""></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="o-row">
+      <div class="o-container">
+        <div class=" o-layout o-layout--gutter o-layout--align-center">
+          <div class="o-layout__item u-2-of-3">
+            <h1>Smart light</h1>           
+          </div>
+          <div class="o-layout__item u-1-of-3 js-add-alarm">
+            <h3><a href="/smartlamp.html">Verander</a></h3>
+          </div>
+      </div>
+        <div class="js-smart-light">
+          <div class=" c-smart-lamp--bg">
+            <div class="js-smart-light-bg c-smart-lamp">
+              <img src="/img/smartLamp.svg">
+            </div>
+            <div class="js-status-lamp c-accent-color">
+              
+            </div>
+          </div>
+        </div>
+        <div class="o-layout o-layout--gutter o-layout--align-center">
+          <div class="o-layout__item u-1-of-2">
+            <h1>Alarmen</h1>           
+          </div>
+          <div class="o-layout__item u-1-of-2">
+            <h3><a href="/alarmen.html">Nieuw alarm</a></h3>
+          </div>
+        </div>
+        <div>
+          <div class=" ">
+            <div class="js-alarmen o-layout ">
+
+            </div>
+          </div>
+        </div>
+        <div class="o-container">
+            <div class="o-layout o-layout--gutter o-layout--align-center">
+              <div class="o-layout__item u-1-of-2">
+                <h1>Temperatuur</h1>           
+              </div>
+              <!--<div class="o-layout__item u-1-of-2">
+                <h3><a href="">Voeg nieuw alarm toe</a></h3>
+              </div>-->
+            </div>
+          <div>
+            <h1 class="js-temperatuur c-temp"> Er is nog geen temperatuur gemeten </h1>
+          </div>
+          <div class="js-grafiek-temperatuur"><canvas id="tempChart"></canvas></div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

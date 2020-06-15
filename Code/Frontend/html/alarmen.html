@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm aanpassen</title>
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/screen.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+    <script defer src="script/dataHandler.js"></script>
+    <script defer src="script/alarmen.js"></script>    
+</head>
+<body>
+    <div class="c-nav--header o-row">
+      <div class="o-container">
+        <ul class="c-nav">
+          <li class="c-nav--logo"><a href="/">WMU</a></li>
+          <li class="c-nav--item" id="btnPower"><a><img src="/img/power.svg" alt="" srcset=""></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="o-row">
+      <div class=" o-container">
+        <div class="o-section o-layout--align-center">
+          <div class=" o-layout  o-layout--align-center">
+            <div class="o-layout__item u-2-of-3">
+              <h1 id="js-alarm-titel">Voeg alarm toe</h1>           
+            </div>
+            <div class="o-layout__item u-1-of-3 js-add-alarm-div">
+              <h3 class="js-add-alarm" id="js-add-alarm" class="c-btn">Opslaan</h3>
+            </div>
+          </div>
+          <div class="o-layout   o-layout--align-center">
+            <div class="o-container o-layout o-layout--justify-center"> 
+              <input class="" type="time" id="js-uur" name="appt" value="08:30" required>
+            </div>
+            <div class="o-container o-layout o-layout--justify-center">
+              <ul class="js-alarm-week">
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="o-section o-layout  o-layout--align-center">
+          <div class="o-layout__item u-2-of-3">
+            <h1>Titel</h1>           
+          </div>
+          <input class="o-layout__item" type="text" id="js-titel" value="Titel">
+          <hr class="o-layout__item">
+        </div>
+        <div class="o-section o-layout  o-layout--align-center">
+          <div class="o-layout__item ">
+            <h1>Deuntje</h1>     
+          </div>
+        </div>
+        <div class="js-muziekje o-layout"> </div> 
+          <div class="o-section o-layout o-layout--align-center">
+            <div class="o-layout__item ">
+              <h1>Kleurmodus</h1> 
+            </div>       
+            <div class="c-kleur">
+              <select  name="kleur" id="js-kleur-modus" class="js-kleur c-kleur-select">
+              </select>
+            </div> 
+            <div class="o-layout__item ">
+              <h1>Kleur</h1> 
+            </div> 
+            <div class="c-kleur"> 
+                <input type="color" id="js-kleur-2" name="favcolor" value="#ff0000">
+            </div> 
+          </div>
+        </div>
+      </div>
+</body>
+</html>
